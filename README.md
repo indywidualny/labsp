@@ -107,5 +107,5 @@ ODP. find $HOME -not -type d| wc -l
 
 Zad.7 Sporządź statystykę praw dostępu (dla każdego z praw dostępu podaj ile razy zostało ono przydzielone).
 ```sh
-ODP.
+ODP. 
 ```
