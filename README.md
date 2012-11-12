@@ -95,37 +95,40 @@ ODP. tail -n 4 program.c
 
 Zad.3 W pliku program.c znajdź wszystkie wiersze z wystąpieniem słowa „main”. (grep)
 ```sh
-ODP. grep -n main
+ODP. grep "main" program.c
 ```
 
 Zad.4 Plikowi program.c nadaj następujące uprawnienia: właściciel – czytanie, pisanie, grupa – czytanie, pozostali użytkownicy: brak uprawnień. (chmod)
 ```sh
-ODP. chmod 540 program.c
+ODP. chmod 650 program.c
 ```
 
 Zad.5 Będąc w katalogu temp przenieś katalog wazne-sprawy do katalogu praca.
 ```sh
-ODP. mv ~/temp/dom/wazne-sprawy ~/temp/praca/
+ODP. mv dom/wazne-sprawy praca/wazne-sprawy
 ```
 
 Zad.6 Zarchiwizuj cały katalog temp. (zip i tar)
 ```sh
-ODP. tar cvf temp.tar 
-     zip zvf temp.zip
+ODP. tar -cvf temp.tar temp
+     gzip temp.tar
 ```
 
 Zad.7 Usuń katalog temp.
 ```sh
-ODP. rmdir temp
+ODP. rm -rf temp
 ```
 
 Zad.8 Odtwórz z archiwum katalog temp. (unzip i tar)
 ```sh
-ODP. tar zxf temp.tar
-     unzip zxf temp.zip
+ODP. tar -zxf temp.tar.gz
 ```
 
 Zad.9 Posprzątaj na swoim koncie.
+```sh
+ODP. cd ~/tmp
+     rm -rf *
+```
 
 # Laboratorium 3
 Zad.1 Wyświetl plik /etc/passwd z podziałem na strony przyjmując, że strona na 5 linii tekstu.
