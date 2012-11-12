@@ -102,7 +102,7 @@ ODP. sort -t : -k4 -r /etc/passwd | sort -t : -k3
 
 Zad.6 Podaj liczbę plików każdego użytkownika.
 ```sh
-ODP.
+ODP. find $HOME -not -type d| wc -l
 ```
 
 Zad.7 Sporządź statystykę praw dostępu (dla każdego z praw dostępu podaj ile razy zostało ono przydzielone).
