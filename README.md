@@ -217,7 +217,11 @@ ODP. ls -l | awk '{print $1,$5,$9}'
 lub
 ```sh
 ODP. find . -not -type d -maxdepth 1
-   -exec ls -l '{}' ';' | cut -d ' ' -f1,6,9
+     -exec ls -l '{}' ';' | cut -d ' ' -f1,6,9
+```
+lub
+```sh
+ODP. ls --format=long --human-readable
 ```
 
 Zad.3 Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmiaru pliku.
@@ -233,6 +237,10 @@ lub
 ODP. find . -maxdepth 1 -not - type d -exec ls -l '{}' ';' 
   | sort -n -t ' ' -k6,6
 ```  
+lub
+```sh
+ODP. ls --sort=size -1
+```
 
 Zad.4 Wyświetl zawartość pliku /etc/passwd posortowaną według numerów UID w kolejności od największego do najmniejszego.
 ```sh
@@ -242,10 +250,18 @@ lub
 ```sh
 ODP. sort -t : -n -k3 -r /etc/passwd
 ```
+lub
+```sh
+ODP. cat /etc/passwd | sort -r -t: -g -k 3
+```
 
 Zad.5 Wyświetl zawartość pliku /etc/passwd posortowaną najpierw według numerów GID w kolejności od największego do najmniejszego, a następnie UID.
 ```sh
 ODP. sort -t : -k4 -r /etc/passwd | sort -t : -k3 
+```
+lub
+```sh
+ODP. cat /etc/passwd | sort --field-separator=":" 
 ```
 
 Zad.6 Podaj liczbę plików każdego użytkownika.
@@ -255,7 +271,22 @@ ODP. find $HOME -not -type d| wc -l
 
 Zad.7 Sporządź statystykę praw dostępu (dla każdego z praw dostępu podaj ile razy zostało ono przydzielone).
 ```sh
-ODP. 
+ODP. find -printf "%m\n" | sort | uniq -c
+```
+
+Efekt wykonania poniższych poleceń?
+
+1) ls -l > lsout.txt 
+```sh
+ODP. Utwotrzenie pliku lsout.txt i wypelnienie jej lista plikow w akutalnym katalogu
+```
+2) ls -la >> lsout.txt
+```sh
+ODP. Dopisuje do pliku lsout.txt liste uruchomionych procesów
+```
+3) ps >> psout.txt
+```sh
+ODP. Dopisuje ilosc wolnej pamięci
 ```
 
 #Laboratorium 5
