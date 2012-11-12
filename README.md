@@ -348,5 +348,3 @@ Zad.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
 ODP.  egrep "(X|D|C|M|V|L|I){1,}" plik.txt
 ```
 
-
-
