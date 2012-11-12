@@ -9,6 +9,21 @@ Zad.2 Wyświetl na ekran 4 ostatnie wiersze pliku program.c.
 ODP. tail -n 4 program.c
 ```
 
+Zad.3 W pliku program.c znajdź wszystkie wiersze z wystąpieniem słowa „main”.
+```sh
+ODP. grep -n main
+```
+
+Zad.4 Plikowi program.c nadaj następujące uprawnienia: właściciel – czytanie, pisanie, grupa – czytanie, pozostali użytkownicy: brak uprawnień.
+```sh
+ODP. chmod 540 program.c
+```
+
+Zad.5 Będąc w katalogu temp przenieś katalog wazne-sprawy do katalogu praca.
+```sh
+ODP. mv ~/temp/dom/wazne-sprawy ~/temp/praca/
+```
+
 # Laboratorium 3
 Zad.1 Wyświetl plik /etc/passwd z podziałem na strony przyjmując, że strona na 5 linii tekstu.
 ```sh
