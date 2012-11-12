@@ -26,9 +26,22 @@ ODP. mv ~/temp/dom/wazne-sprawy ~/temp/praca/
 
 Zad.6 Zarchiwizuj cały katalog temp. (zip i tar)
 ```sh
-ODP. tar -cvf temp.tar 
-     zip -zvf temp.zip
+ODP. tar cvf temp.tar 
+     zip zvf temp.zip
 ```
+
+Zad.7 Usuń katalog temp.
+```sh
+ODP. rmdir temp
+```
+
+Zad.8 Odtwórz z archiwum katalog temp. (unzip i tar)
+```sh
+ODP. tar zxf temp.tar
+     unzip zxf temp.zip
+```
+
+Zad.9 Posprzątaj na swoim koncie.
 
 # Laboratorium 3
 Zad.1 Wyświetl plik /etc/passwd z podziałem na strony przyjmując, że strona na 5 linii tekstu.
