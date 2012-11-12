@@ -322,4 +322,31 @@ Zad.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (
 ODP. mkdir date +%Y-%m-%d
 ```
 
+#Laboratorium 6
+Zad.1 W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak.
+```sh
+ODP. grep . {1,} plik.txt
+```
+
+Zad.2 Znajdź w plikach pl* wiersze rozpoczynające się od cyfry.
+```sh
+ODP. grep ^[0-9] pl*
+```
+
+Zad.3 Znajdź pliki, zawierające wiersz w którym na 9 pozycji występuje litera r.
+```sh
+ODP. ls -1 | grep -E '^.{8}r.*'
+```
+
+Zad.4 Policz, ilu użytkowników systemu używa powłoki bash (zgodnie z zapisami w pliku /etc/passwd).
+```sh
+ODP. grep -c bash /etc/passwd
+```
+
+Zad.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
+```sh
+ODP.  egrep "(X|D|C|M|V|L|I){1,}" plik.txt
+```
+
+
 
