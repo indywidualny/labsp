@@ -52,6 +52,36 @@ ODP. cat > wykonano.txt
     split -b 5 wykonano.txt
 ```
 
+Zad.7 Będąc w katalogu logo skopiuj powyżej otrzymane 3 pliki do katalogu dokumenty.
+```sh
+ODP. cp ../../praca/zlecenia/zrealizowane/x* ../../praca/dokumenty
+```
+
+Zad.8 Będąc w katalogu dokumenty połącz skopiowane 3 pliki w plik odtworzono.txt, tak aby otrzymać plik o zawartości identycznej z wykonano.txt. Następnie plik odtworzono.txt skopiuj do katalogu wazne-sprawy.
+```sh
+ODP. cat xaa xab xac > odtworzono.txt
+     cp odtworzono.txt ../../dom/wazne-sprawy/odtworzono.txt
+```
+
+Zad.9 Będąc w katalogu wazne-sprawy sprawdź, czy są jakieś różnice w zawartości plików wykonano.txt i odtworzono.txt.
+```sh
+ODP. diff -a ../../praca/zlecenia/zrealizowane/wykonano.txt odtworzono.txt
+```
+
+Zad.10 Wyświetl kalendarz na październik 2009 r. (cal)
+```sh
+ODP. cal 10 2009
+```
+Wyświetl kalendarz na wrzesień, październik i listopad 2009 r. z miesiącami obok siebie (cal):
+```sh
+ODP. cal -3 2009
+```
+
+Zad.11 Jaki był dzień tygodnia 25 maja 1975 r. (cal i date)
+```sh
+ODP. date -d 1975-05-25 +%A
+```
+
 #Laboratorium 2
 Zad.1 Wyświetl na ekran 2 pierwsze wiersze pliku program.c. (head)
 ```sh
