@@ -140,10 +140,21 @@ Zad.2 Korzystając z polecenia cat utwórz plik tekst3.txt, który będzie skła
 ```sh
 ODP. cat tekst1.txt - tekst2.txt > tekst3.txt
 ```
+lub
+```sh
+ODP. cat tekst1.txt > tekst3.txt
+     cat >> tekst3.txt
+     cat tekst2.txt >> tekst3.txt
+```
+
 
 Zad.3 Wyświetl po 5 pierwszych linii wszystkich plików w swoim katalogu domowym w taki sposób, aby nie były wyświetlane ich nazwy.
 ```sh
 ODP. head home/* -n 5 -q
+```
+lub
+```sh
+ODP. head -qn 5 *
 ```
 
 Zad.4 Wyświetl linie o numerach 3, 4 i 5 z pliku /etc/passwd.
@@ -183,6 +194,11 @@ lub
 ```sh
 ODP. cat /etc/passwd/ | head -n 3 | wc -m
 ```
+lub
+```sh
+ODP. head /etc/passwd -n 3 | wc -c
+```
+
 
 # Laboratorium 4
 Zad.1 Wyświetl listę plików z aktualnego katalogu, zamieniając wszystkie małe litery na duże.
