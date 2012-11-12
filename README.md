@@ -57,10 +57,19 @@ Zad.1 Wyświetl listę plików z aktualnego katalogu, zamieniając wszystkie ma�
 ```sh
 ODP. ls | tr [:lower:] [:upper:]
 ```
+lub
+```sh
+ODP. ls | tr '[a-z]' '[A-Z]'
+```
 
 Zad.2 Wyświetl listę praw dostępu do plików w aktualnym katalogu, ich rozmiar i nazwę.
 ```sh
 ODP. ls -l | awk '{print $1,$5,$9}'
+```
+lub
+```sh
+ODP. find . -not -type d -maxdepth 1
+   -exec ls -l '{}' ';' | cut -d ' ' -f1,6,9
 ```
 
 Zad.3 Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmiaru pliku.
