@@ -1,3 +1,9 @@
+#Laboratorium 2
+Zad.2 Wyświetl na ekran 4 ostatnie wiersze pliku program.c.
+```sh
+ODP. tail -n 4 program.c
+```
+
 # Laboratorium 3
 Zad.1 Wyświetl plik /etc/passwd z podziałem na strony przyjmując, że strona na 5 linii tekstu.
 ```sh
