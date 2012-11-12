@@ -178,4 +178,14 @@ ODP. find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty \) 2> /d
 
 Zadania różne
 
-Zad.5 
+Zad.5 Z bieżącego katalogu usuń pliki, których nazwa zaczyna się na literę „x” i zawiera dokładnie trzy znaki.
+```sh
+ODP. rm x??
+```
+
+Zad.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (w momencie wywołania) systemowa data w formacie rrrr-mm-dd.
+```sh
+ODP. mkdir date +%Y-%m-%d
+```
+
+
