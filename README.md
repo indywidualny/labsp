@@ -14,6 +14,11 @@ Zad.3 Wyświetl po 5 pierwszych linii wszystkich plików w swoim katalogu domowy
 ODP. head home/* -n 5 -q
 ```
 
+Zad.4 Wyświetl linie o numerach 3, 4 i 5 z pliku /etc/passwd.
+```sh
+ODP. head -n 5 /etc/passwd |tail -n 3
+```
+
 Zad.7 Za pomocą filtru tr wykonaj modyfikację pliku plik.txt, polegającą na umieszczeniu każdego słowa w osobnej linii.
 ```sh
 ODP. cat plik.txt | tr " \t" "\n"
