@@ -55,11 +55,39 @@ ODP. cat /etc/passwd/ | head -n 3 | wc -m
 # Laboratorium 4
 Zad.1 Wyświetl listę plików z aktualnego katalogu, zamieniając wszystkie małe litery na duże.
 ```sh
-ODP.     ls | tr [:lower:] [:upper:]
+ODP. ls | tr [:lower:] [:upper:]
+```
+
+Zad.2 Wyświetl listę praw dostępu do plików w aktualnym katalogu, ich rozmiar i nazwę.
+```sh
+ODP. ls -l | awk '{print $1,$5,$9}'
 ```
 
 Zad.3 Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmiaru pliku.
 ```sh
-ODP. ls -l -s
+ODP. ls -l | sort -k5,5
+```
+lub
+```sh
+ODP. ls -lrS
 ```
 
+Zad.4 Wyświetl zawartość pliku /etc/passwd posortowaną według numerów UID w kolejności od największego do najmniejszego.
+```sh
+ODP.
+```
+
+Zad.5 Wyświetl zawartość pliku /etc/passwd posortowaną najpierw według numerów GID w kolejności od największego do najmniejszego, a następnie UID.
+```sh
+ODP.
+```
+
+Zad.6 Podaj liczbę plików każdego użytkownika.
+```sh
+ODP.
+```
+
+Zad.7 Sporządź statystykę praw dostępu (dla każdego z praw dostępu podaj ile razy zostało ono przydzielone).
+```sh
+ODP.
+```
