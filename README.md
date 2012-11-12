@@ -1,4 +1,9 @@
 #Laboratorium 2
+Zad.1 Wyświetl na ekran 2 pierwsze wiersze pliku program.c.
+```sh
+ODP. head -n 2 program.c
+```
+
 Zad.2 Wyświetl na ekran 4 ostatnie wiersze pliku program.c.
 ```sh
 ODP. tail -n 4 program.c
