@@ -51,3 +51,10 @@ lub
 ```sh
 ODP. cat /etc/passwd/ | head -n 3 | wc -m
 ```
+
+# Laboratorium 4
+Zad.3 Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmiaru pliku.
+```sh
+ODP. ls -l -s
+```
+
