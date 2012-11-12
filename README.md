@@ -1,3 +1,55 @@
+#Laboratorium 1
+Zad.1 Używając linii poleceń stwórz strukturę katalogów:
+
+temp
+|-- dom
+|-- nauka
+|   |-- c
+|   |-- logo
+|   `-- pascal
+`-- praca
+    |-- dokumenty
+    `-- zlecenia
+        |-- niezrealizowane
+        `-- zrealizowane
+```sh
+ODP. mkdir -p temp/dom
+     mkdir -p temp/nauka/{c,logo,pascal}
+     mkdir -p temp/praca/{dokumenty,zlecenia}
+     mkdir -p temp/praca/zlecenia/{niezrealizowane,zrealizowane}
+     cd temp | tree
+```
+
+Zad.2 Przejdź do katalogu dom i utwórz katalog wazne-sprawy.
+```sh
+ODP. cd dom
+     mkdir wazne-sprawy
+```
+
+Zad.3 Wejdź do katalogu wazne-sprawy i utwórz tam pusty plik rachunki.txt.
+```sh
+ODP. cd wazne-sprawy
+     touch rachunki.txt
+```
+
+Zad.4 Będąc w katalogu wazne-sprawy skopiuj plik rachunki.txt do katalogu zrealizowane.
+```sh
+ODP. cp rachunki.txt ../../praca/zlecenia/zrealizowane/rachunki.txt
+```
+
+Zad.5 Przejdź do katalogu zrealizowane i zmień nazwę pliku rachunki.txt na wykonano.txt.
+```sh
+ODP. cd ../..
+     cd praca/zlecenia/zrealizowane
+     mv rachunki.txt wykonano.txt
+```
+Polecenia: split, cat, diff
+
+Zad.6 Utwórz plik wykonano.txt wielkości 11 bajtów, następnie podziel go pliki wielkości 5 bajtów. W ten sposób otrzymasz 3 pliki. (split)
+```sh
+ODP.
+```
+
 #Laboratorium 2
 Zad.1 Wyświetl na ekran 2 pierwsze wiersze pliku program.c. (head)
 ```sh
