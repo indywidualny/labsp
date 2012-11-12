@@ -4,6 +4,11 @@ Zad.1 Wyświetl plik /etc/passwd z podziałem na strony przyjmując, że strona 
 ```sh
 ODP. more -5 /etc/passwd
 ```
+Zad.7 Za pomocą filtru tr wykonaj modyfikację pliku plik.txt, polegającą na umieszczeniu każdego słowa w osobnej linii.
+
+```sh
+ODP. cat plik.txt | tr " \t" "\n"
+```
 
 Zad.8 Zlicz wszystkie pliki znajdujące się w katalogu /etc i jego podkatalogach. 
 
