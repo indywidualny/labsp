@@ -47,7 +47,9 @@ Polecenia: split, cat, diff
 
 Zad.6 Utwórz plik wykonano.txt wielkości 11 bajtów, następnie podziel go pliki wielkości 5 bajtów. W ten sposób otrzymasz 3 pliki. (split)
 ```sh
-ODP.
+ODP. cat > wykonano.txt 
+    12345678901 (potem wcisnąć Ctrl+D)
+    split -b 5 wykonano.txt
 ```
 
 #Laboratorium 2
