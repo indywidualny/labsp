@@ -4,6 +4,13 @@ Zad.1 Wyświetl plik /etc/passwd z podziałem na strony przyjmując, że strona 
 ```sh
 ODP. more -5 /etc/passwd
 ```
+
+Zad.2 Korzystając z polecenia cat utwórz plik tekst3.txt, który będzie składał się z zawartości pliku tekst1.txt, ciągu znaków podanego ze standardowego wejścia (klawiatury) i pliku tekst2.txt.
+```sh
+ODP. cat tekst1.txt - tekst2.txt > tekst3.txt
+```
+
+
 Zad.7 Za pomocą filtru tr wykonaj modyfikację pliku plik.txt, polegającą na umieszczeniu każdego słowa w osobnej linii.
 
 ```sh
