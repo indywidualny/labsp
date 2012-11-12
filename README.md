@@ -88,12 +88,16 @@ ODP. find . -maxdepth 1 -not - type d -exec ls -l '{}' ';'
 
 Zad.4 Wyświetl zawartość pliku /etc/passwd posortowaną według numerów UID w kolejności od największego do najmniejszego.
 ```sh
-ODP.
+ODP. cat /etc/passwd | sort -n -t ':' -k3,3
+```
+lub
+```sh
+ODP. sort -t : -n -k3 -r /etc/passwd
 ```
 
 Zad.5 Wyświetl zawartość pliku /etc/passwd posortowaną najpierw według numerów GID w kolejności od największego do najmniejszego, a następnie UID.
 ```sh
-ODP.
+ODP. sort -t : -k4 -r /etc/passwd | sort -t : -k3 
 ```
 
 Zad.6 Podaj liczbę plików każdego użytkownika.
