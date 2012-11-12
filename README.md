@@ -1,20 +1,20 @@
 #Laboratorium 2
-Zad.1 Wyświetl na ekran 2 pierwsze wiersze pliku program.c.
+Zad.1 Wyświetl na ekran 2 pierwsze wiersze pliku program.c. (head)
 ```sh
 ODP. head -n 2 program.c
 ```
 
-Zad.2 Wyświetl na ekran 4 ostatnie wiersze pliku program.c.
+Zad.2 Wyświetl na ekran 4 ostatnie wiersze pliku program.c. (head,tail)
 ```sh
 ODP. tail -n 4 program.c
 ```
 
-Zad.3 W pliku program.c znajdź wszystkie wiersze z wystąpieniem słowa „main”.
+Zad.3 W pliku program.c znajdź wszystkie wiersze z wystąpieniem słowa „main”. (grep)
 ```sh
 ODP. grep -n main
 ```
 
-Zad.4 Plikowi program.c nadaj następujące uprawnienia: właściciel – czytanie, pisanie, grupa – czytanie, pozostali użytkownicy: brak uprawnień.
+Zad.4 Plikowi program.c nadaj następujące uprawnienia: właściciel – czytanie, pisanie, grupa – czytanie, pozostali użytkownicy: brak uprawnień. (chmod)
 ```sh
 ODP. chmod 540 program.c
 ```
@@ -22,6 +22,12 @@ ODP. chmod 540 program.c
 Zad.5 Będąc w katalogu temp przenieś katalog wazne-sprawy do katalogu praca.
 ```sh
 ODP. mv ~/temp/dom/wazne-sprawy ~/temp/praca/
+```
+
+Zad.6 Zarchiwizuj cały katalog temp. (zip i tar)
+```sh
+ODP. tar -cvf temp.tar 
+     zip -zvf temp.zip
 ```
 
 # Laboratorium 3
