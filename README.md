@@ -154,3 +154,28 @@ Zad.7 Sporządź statystykę praw dostępu (dla każdego z praw dostępu podaj i
 ```sh
 ODP. 
 ```
+
+#Laboratorium 5
+Zad.1 Znajdź w swoim katalogu domowym (bez podkatalogów) wszystkie pliki, które zostały zmodyfikowane w ciągu ostatnich dziesięciu dni i wyświetl ich nazwy.
+```sh
+ODP. find ~/ -maxdepth 1 -mtime -10
+```
+
+Zad.2 Znajdź wszystkie pliki zwykłe w systemie, które mają w nazwie ciąg znaków „conf” i wyświetl ich nazwy na ekranie.
+```sh
+ODP. find  / -name \*config\* -type f 2> /dev/null
+```
+
+Zad.3 Znajdź w swoim katalogu domowym wszystkie pliki, które nie były używane w ciągu ostatnich 20 dni.
+```sh
+ODP. find ~/ -atime 20
+```
+
+Zad.4 Znajdź w katalogu /etc wszystkie niepuste podkatalogi i pliki o nazwach zaczynających się na literę „a”.
+```sh
+ODP. find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty \) 2> /dev/null
+```
+
+Zadania różne
+
+Zad.5 
