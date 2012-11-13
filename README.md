@@ -220,8 +220,7 @@ ODP. ls -l | awk '{print $1,$5,$9}'
 ```
 lub
 ```sh
-ODP. find . -not -type d -maxdepth 1
-     -exec ls -l '{}' ';' | cut -d ' ' -f1,6,9
+ODP. find . -type f -exec ls -l '{}' ';' | cut -d ' ' -f1,6,9
 ```
 lub
 ```sh
