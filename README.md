@@ -207,7 +207,7 @@ ODP. head /etc/passwd -n 3 | wc -c
 # Laboratorium 4
 Zad.1 Wyświetl listę plików z aktualnego katalogu, zamieniając wszystkie małe litery na duże.
 ```sh
-ODP. ls | tr [:lower:] [:upper:]
+ODP. ls | tr [:lower:] [:upper:] (nie obsługuje znaków narodowych)
 ```
 lub
 ```sh
