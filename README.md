@@ -237,8 +237,7 @@ ODP. ls -lrS
 ```
 lub
 ```sh
-ODP. find . -maxdepth 1 -not - type d -exec ls -l '{}' ';' 
-  | sort -n -t ' ' -k6,6
+ODP. find . -maxdepth 1 -not - type d -exec ls -l '{}' ';' | sort -n -t ' ' -k6,6
 ```  
 lub
 ```sh
