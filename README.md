@@ -260,6 +260,10 @@ lub
 ```sh
 ODP. cat /etc/passwd | sort -r -t: -g -k 3
 ```
+lub
+```sh
+ODP. sort -t : -k3 -nr
+```
 
 Zad.5 Wyświetl zawartość pliku /etc/passwd posortowaną najpierw według numerów GID w kolejności od największego do najmniejszego, a następnie UID.
 ```sh
