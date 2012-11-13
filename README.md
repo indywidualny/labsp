@@ -211,7 +211,7 @@ ODP. ls | tr [:lower:] [:upper:]
 ```
 lub
 ```sh
-ODP. ls | tr '[a-z]' '[A-Z]'
+ODP. ls | tr a-z A-Z
 ```
 
 Zad.2 Wyświetl listę praw dostępu do plików w aktualnym katalogu, ich rozmiar i nazwę.
