@@ -213,6 +213,10 @@ lub
 ```sh
 ODP. ls | tr a-z A-Z
 ```
+dla polskich liter
+```sh
+ODP. ls | tr [:lower:]ąęćłśżź [:upper:]ĄĘŁŚŻŹ
+```
 
 Zad.2 Wyświetl listę praw dostępu do plików w aktualnym katalogu, ich rozmiar i nazwę.
 ```sh
