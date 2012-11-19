@@ -213,7 +213,7 @@ lub
 ```sh
 ODP. ls | tr a-z A-Z
 ```
-dla polskich liter
+dla polskich liter:
 ```sh
 ODP. ls | tr [:lower:]ąęćłśżź [:upper:]ĄĘŁŚŻŹ
 ```
@@ -355,6 +355,6 @@ ODP. grep -c bash /etc/passwd
 
 Zad.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
 ```sh
-ODP.  egrep "(X|D|C|M|V|L|I){1,}" plik.txt
+ODP. egrep "(X|D|C|M|V|L|I){1,}" plik.txt
 ```
 
