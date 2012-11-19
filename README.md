@@ -76,6 +76,10 @@ Wyświetl kalendarz na wrzesień, październik i listopad 2009 r. z miesiącami 
 ```sh
 ODP. cal -3 2009
 ```
+lub
+```sh
+ODP. cal 11 2009 -3m
+```
 
 Zad.11 Jaki był dzień tygodnia 25 maja 1975 r. (cal i date)
 ```sh
