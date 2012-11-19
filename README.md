@@ -228,7 +228,7 @@ ODP. ls -l | awk '{print $1,$5,$9}'
 ```
 lub
 ```sh
-ODP. find . -type f -exec ls -l '{}' ';' | cut -d ' ' -f1,5,9
+ODP. find . -type f -exec ls -l '{}' ';' | cut -d ' ' -f1,5,9 (nie działa dla plików z datami dwucyfrowymi)
 ```
 lub
 ```sh
@@ -266,7 +266,7 @@ ODP. cat /etc/passwd | sort -r -t: -g -k 3
 ```
 lub
 ```sh
-ODP. sort -t : -k3 -nr
+ODP. sort -t : -k3 -nr /etc/passwd
 ```
 
 Zad.5 Wyświetl zawartość pliku /etc/passwd posortowaną najpierw według numerów GID w kolejności od największego do najmniejszego, a następnie UID.
