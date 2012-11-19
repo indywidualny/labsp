@@ -185,6 +185,10 @@ lub
 ```sh
 ODP. find /etc -type f 2> errors | wc -l
 ```
+lub
+```sh
+ODP. find /etc -type f -follow | wc -l
+```
 
 Zad.9 Napisać polecenie zliczające ilość znaków z pierwszych trzech linii pliku /etc/passwd.
 ```sh
