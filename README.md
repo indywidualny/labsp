@@ -106,6 +106,12 @@ Zad.4 Plikowi program.c nadaj następujące uprawnienia: właściciel – czytan
 ```sh
 ODP. chmod 650 program.c
 ```
+lub
+```sh
+ODP. chmod u+rw program.c
+     chmod g+r program.c
+     chmod o-rwx program.c
+```
 
 Zad.5 Będąc w katalogu temp przenieś katalog wazne-sprawy do katalogu praca.
 ```sh
@@ -117,15 +123,24 @@ Zad.6 Zarchiwizuj cały katalog temp. (zip i tar)
 ODP. tar -cvf temp.tar temp
      gzip temp.tar
 ```
+lub
+```sh
+ODP. zip -r temp.zip temp
+```
 
 Zad.7 Usuń katalog temp.
 ```sh
 ODP. rm -rf temp
 ```
+lub
+```sh
+ODP. rm -R temp
+```
 
 Zad.8 Odtwórz z archiwum katalog temp. (unzip i tar)
 ```sh
 ODP. tar -zxf temp.tar.gz
+     unzip temp.zip
 ```
 
 Zad.9 Posprzątaj na swoim koncie.
@@ -154,7 +169,7 @@ ODP. cat tekst1.txt > tekst3.txt
 
 Zad.3 Wyświetl po 5 pierwszych linii wszystkich plików w swoim katalogu domowym w taki sposób, aby nie były wyświetlane ich nazwy.
 ```sh
-ODP. head home/* -n 5 -q
+ODP. head $HOME/* -n 5 -q
 ```
 lub
 ```sh
@@ -173,7 +188,7 @@ ODP. tail -n 7 /etc/passwd | head -n 3
 
 Zad.6 Wyświetl zawartość pliku /etc/passwd w jednej linii.
 ```sh
-ODP. cat /etc/passwd |tr "n" " "
+ODP. cat /etc/passwd | tr "n" " "
 ```
 
 Zad.7 Za pomocą filtru tr wykonaj modyfikację pliku plik.txt, polegającą na umieszczeniu każdego słowa w osobnej linii.
@@ -193,6 +208,10 @@ lub
 ```sh
 ODP. find /etc -type f -follow | wc -l
 ```
+lub
+```sh
+ODP. head -n 0 /etc/* | tr -s '[n*2]' 'n' | wc -l
+```
 
 Zad.9 Napisać polecenie zliczające ilość znaków z pierwszych trzech linii pliku /etc/passwd.
 ```sh
@@ -210,7 +229,10 @@ lub
 ```sh
 ODP. head /etc/passwd -n 3 | wc -c
 ```
-
+lub
+```sh
+ODP. cut /etc/passwd | head -n 3 | wc -n
+```
 
 # Laboratorium 4
 Zad.1 Wyświetl listę plików z aktualnego katalogu, zamieniając wszystkie małe litery na duże.
@@ -237,6 +259,10 @@ ODP. find . -type f -exec ls -l '{}' ';' | cut -d ' ' -f1,5,9 (nie działa dla p
 lub
 ```sh
 ODP. ls --format=long --human-readable
+```
+lub
+```sh
+ODP. find . -printf "Plik: %f Rozmiar: %s Prawa: %M \n" -maxdepth 1
 ```
 
 Zad.3 Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmiaru pliku.
@@ -272,6 +298,10 @@ lub
 ```sh
 ODP. sort -t : -k3 -nr /etc/passwd
 ```
+lub
+```sh
+ODP. cat /etc/passwd/ | sort --reverse --general-numeric-sort
+```
 
 Zad.5 Wyświetl zawartość pliku /etc/passwd posortowaną najpierw według numerów GID w kolejności od największego do najmniejszego, a następnie UID.
 ```sh
@@ -281,10 +311,18 @@ lub
 ```sh
 ODP. cat /etc/passwd | sort --field-separator=":" 
 ```
+lub
+```sh
+ODP. cat /etc/passwd | sort -r --field-separator=":" -g -k 4,3
+```
 
 Zad.6 Podaj liczbę plików każdego użytkownika.
 ```sh
-ODP. find $HOME -not -type d| wc -l
+ODP. find $HOME -not -type d | wc -l
+```
+lub
+```sh
+ODP. find / -printf "%u\n" 2> /dev/null | sort | uniq -c
 ```
 
 Zad.7 Sporządź statystykę praw dostępu (dla każdego z praw dostępu podaj ile razy zostało ono przydzielone).
@@ -326,6 +364,10 @@ ODP. find ~/ -atime 20
 Zad.4 Znajdź w katalogu /etc wszystkie niepuste podkatalogi i pliki o nazwach zaczynających się na literę „a”.
 ```sh
 ODP. find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty \) 2> /dev/null
+```
+lub
+```sh
+ODP. find /etc\(-type d -and ! empty\) -or \(-type f -and -name a*\) 2> /dev/null
 ```
 
 Zadania różne
