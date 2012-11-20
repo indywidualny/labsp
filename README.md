@@ -353,7 +353,7 @@ ODP. find ~/ -maxdepth 1 -mtime -10 -type f (maxdepth podaj pierwsze w kolejnoś
 
 Zad.2 Znajdź wszystkie pliki zwykłe w systemie, które mają w nazwie ciąg znaków „conf” i wyświetl ich nazwy na ekranie.
 ```sh
-ODP. find  / -name \*config\* -type f 2> /dev/null
+ODP. find  /etc -name \*config\* -type f 2> /dev/null
 ```
 
 Zad.3 Znajdź w swoim katalogu domowym wszystkie pliki, które nie były używane w ciągu ostatnich 20 dni.
