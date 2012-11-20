@@ -330,7 +330,7 @@ Zad.7 Sporządź statystykę praw dostępu (dla każdego z praw dostępu podaj i
 ODP. find -printf "%m\n" | sort | uniq -c
 ```
 
-Efekt wykonania poniższych poleceń?
+Zad.8 Efekt wykonania poniższych poleceń?
 
 1) ls -l > lsout.txt 
 ```sh
