@@ -358,6 +358,10 @@ ODP. find  /etc -name \*config\* -type f 2> /dev/null
 
 Zad.3 Znajdź w swoim katalogu domowym wszystkie pliki, które nie były używane w ciągu ostatnich 20 dni.
 ```sh
+ODP. find ~/ \( -type d -name ".git" -prune \) -o \( -type f -print \) 
+```
+lub
+```sh
 ODP. find ~/ -atime 20 (nie do końca)
 ```
 lub 
@@ -366,11 +370,11 @@ ODP. find . -path '*/.git/*' - prune -o -print
 ```
 lub
 ```sh
-ODP. -mtime -20 | egrep -v '/\.git'
+ODP. -mtime -20 | egrep -v '/\.git' (praktyczniejsza wersja z mtime)
 ```
 lub
 ```sh
-ODP. find . ! -repex ".*/\.git/?.*"
+ODP. find . ! -regex ".*/\.git/?.*"
 ```
 
 Zad.4 Znajdź w katalogu /etc wszystkie niepuste podkatalogi i pliki o nazwach zaczynających się na literę „a”.
