@@ -403,7 +403,7 @@ ODP. find. -minidepth 2 -maxdepth 2 -name x?? -delete (jest krótsze)
 
 Zad.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (w momencie wywołania) systemowa data w formacie rrrr-mm-dd.
 ```sh
-ODP. mkdir date +%Y-%m-%d
+ODP. mkdir date '+%Y-%m-%d' lub mkdir date $(+%Y-%m-%d)
 ```
 
 #Laboratorium 6
