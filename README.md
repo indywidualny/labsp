@@ -399,6 +399,7 @@ ODP. find. -minidepth 2 -maxdepth 2 -name x?? -exec rm -rf \(\) \;
 lub 
 ```sh
 ODP. find. -minidepth 2 -maxdepth 2 -name x?? -delete (jest krótsze)
+```
 
 Zad.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (w momencie wywołania) systemowa data w formacie rrrr-mm-dd.
 ```sh
