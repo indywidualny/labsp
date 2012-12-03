@@ -431,6 +431,10 @@ Zad.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
 ```sh
 ODP. egrep "(X|D|C|M|V|L|I){1,}" plik.txt
 ```
+lub
+```sh
+ODP. grep [IVXLCDM] plik.txt
+```
 
 #Laboratorium 7
 Zad.1 W bieżącym katalogu zamienić rozszerzenia wszystkich plików z rozszerzeniem htm na html. Jeżeli w nazwie pliku istnieje spacja, to należy zamienić ją na znak podkreślenia.
