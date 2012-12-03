@@ -379,7 +379,7 @@ ODP. find . ! -regex ".*/\.git/?.*"
 
 Zad.4 Znajdź w katalogu /etc wszystkie niepuste podkatalogi i pliki o nazwach zaczynających się na literę „a”.
 ```sh
-ODP. find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty \) 2> /dev/null (nie działa do niektórych katalogów)
+ODP. find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty \) 2> /dev/null (nie działa do końca - w podkatalogach nie wyznacza plików rozpoczynających się na "a")
 ```
 lub
 ```sh
