@@ -437,7 +437,15 @@ ODP. egrep "(X|D|C|M|V|L|I){1,}" plik.txt
 ```
 lub
 ```sh
-ODP. grep [IVXLCDM] plik.txt
+ODP. grep [IVXLCDM] plik.txt (niedokładne)
+```
+lub
+```sh
+ODP. egrep -iw [IVXLCDM]+ plik.txt
+```
+lub
+```sh
+ODP. egrep -i \\b[IVXLCDM]+\\b plik.txt
 ```
 
 #Laboratorium 7
