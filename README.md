@@ -409,7 +409,7 @@ ODP. mkdir 'date +%Y-%m-%d' lub mkdir $(date +%Y-%m-%d)
 #Laboratorium 6
 Zad.1 W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak.
 ```sh
-ODP. grep . {1,} plik.txt
+ODP. grep . plik.txt
 ```
 
 Zad.2 Znajdź w plikach pl* wiersze rozpoczynające się od cyfry.
@@ -425,6 +425,10 @@ ODP. ls -1 | grep -E '^.{8}r.*'
 Zad.4 Policz, ilu użytkowników systemu używa powłoki bash (zgodnie z zapisami w pliku /etc/passwd).
 ```sh
 ODP. grep -c bash /etc/passwd
+```
+lub
+```sh
+ODP. grep -c "/bash$" /etc/passwd
 ```
 
 Zad.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
