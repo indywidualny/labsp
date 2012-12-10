@@ -315,6 +315,10 @@ lub
 ```sh
 ODP. cat /etc/passwd | sort -r --field-separator=":" -g -k 4,3
 ```
+lub
+```sh
+ODP. cat /etc/passwd | sort --field-separator=":" --general-numeric-sort --key 4,3 --reverse
+```
 
 Zad.6 Podaj liczbę plików każdego użytkownika.
 ```sh
