@@ -264,6 +264,10 @@ lub
 ```sh
 ODP. find . -printf "Plik: %f Rozmiar: %s Prawa: %M \n" -maxdepth 1
 ```
+lub
+```sh
+ODP. ls -l | cut --byes=1-10,29-33,46-
+```
 
 Zad.3 Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmiaru pliku.
 ```sh
