@@ -557,6 +557,24 @@ ODP. #!/bin/bash
      echo "Silnia z liczby $1 = $silnia"
      exit 0
 ```
+lub
+```sh
+ODP. #!/bin/bash
+# SKRYPT OBLICZA SILNIE Z LICZBY
+# PODANEJ JAKO ARGUMENT
+
+i=1
+liczba=1
+ARGUMENT=$1
+let ARGUMENT=$1+1
+while [ $i -lt $ARGUMENT ]
+do
+let liczba=$i*$liczba
+let i+=1
+done
+echo "Silnia wynosi $liczba"
+exit 0
+```
 
 Zad.3 Napisać skrypt zbierający jak najwięcej informacji o użytkowniku, którego login jest argumentem skryptu. Jeżeli skrypt nie ma argumentu, to należy użyć login osoby uruchamiającej skrypt.
 ```sh
