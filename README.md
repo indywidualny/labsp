@@ -469,6 +469,16 @@ ODP. #!/bin/bash
      done
      exit 0
 ```
+lub
+```sh
+ODP. #!/bin/bash
+
+    for x in *.htm
+    do
+      echo $x
+      done
+```
+
 
 Zad.2 Napisać skrypt zawierający funkcję obliczającą silnię. Następnie należy obliczyć silnię z liczby, która jest argumentem skryptu. W przypadku niepoprawnego argumentu należy wypisać odpowiedni komunikat.
 ```sh
