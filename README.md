@@ -517,6 +517,29 @@ done
 echo "Rozszerzenie zmienione $number razy, a spacje $numer razy"
 exit 0
 ```
+Tworzenie plików
+```sh
+ODP. #!/bin/bash
+# TWORZY PO 10 PLIKOW BEZ SPACJI
+# I ZE SPACJAMI
+echo "Let's make some files"
+i=0
+mkdir pliki
+cd pliki
+while [ $i -lt 10 ]
+do
+touch "plik$i.htm"
+let i=i+1
+done
+i=0
+while [ $i -lt 10 ]
+do
+touch "plik $i.htm"
+let i=i+1
+done
+echo "Pliki utworzone!"
+exit 0
+```
 
 Zad.2 Napisać skrypt zawierający funkcję obliczającą silnię. Następnie należy obliczyć silnię z liczby, która jest argumentem skryptu. W przypadku niepoprawnego argumentu należy wypisać odpowiedni komunikat.
 ```sh
