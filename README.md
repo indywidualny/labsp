@@ -13,10 +13,6 @@ temp
         |-- niezrealizowane
         |-- zrealizowane
 
-ererere
-|->
-rerre
-
 ```sh
 ODP. mkdir -p temp/dom
      mkdir -p temp/nauka/{c,logo,pascal}
