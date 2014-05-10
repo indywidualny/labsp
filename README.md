@@ -6,12 +6,12 @@ temp
 |-- nauka
 |   |-- c
 |   |-- logo
-|   `-- pascal
-`-- praca
+|   |-- pascal
+|-- praca
     |-- dokumenty
-    `-- zlecenia
+    |-- zlecenia
         |-- niezrealizowane
-        `-- zrealizowane
+        |-- zrealizowane
 ```sh
 ODP. mkdir -p temp/dom
      mkdir -p temp/nauka/{c,logo,pascal}
